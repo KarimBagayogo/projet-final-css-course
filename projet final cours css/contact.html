@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Contactez-moi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .contact-container {
+      background-color: white;
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+      font-size: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #0077ff;
+      outline: none;
+    }
+
+    button {
+      background-color: #0077ff;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fcc;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+     <nav class="navigation">
+        <figure>
+            <!-- <img src="images/logo-removebg-preview.png" style=" width: 70px; transform: scale(1.5); " alt="logo de l'ntreprise"> -->
+        </figure>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produit.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  <div class="contact-container">
+    <h1>Contactez-moi</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</body>
+</html>
